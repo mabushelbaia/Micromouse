@@ -10,8 +10,7 @@ Motor::Motor(int en, int forwardPin, int backwardPin) {
     pinMode(backwardPin, OUTPUT);
 }
 
-void Motor::setSpeed(float percent) {   
-    int speed = percent * 255;
+void Motor::setSpeed(int speed) {   
     analogWrite(en, speed);
 }
 

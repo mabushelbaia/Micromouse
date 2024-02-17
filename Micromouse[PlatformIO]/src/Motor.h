@@ -6,7 +6,7 @@
 class Motor {
 public:
     Motor(int en, int forwardPin, int backwardPin);
-    void setSpeed(float percent);
+    void setSpeed(int speed);
     void forward();
     void backward();
     void stop();
